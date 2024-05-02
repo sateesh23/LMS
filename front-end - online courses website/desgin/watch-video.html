@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>watch</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+   <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/about.css">
+   <link rel="stylesheet" href="css/courses.css">
+   <link rel="stylesheet" href="css/form.css">
+   <link rel="stylesheet" href="css/header.css">
+   <link rel="stylesheet" href="css/homegrid.css">
+   <link rel="stylesheet" href="css/playlist.css">
+   <link rel="stylesheet" href="css/review.css">
+   <link rel="stylesheet" href="css/sidebar.css">
+   <link rel="stylesheet" href="css/teachers.css">
+   <link rel="stylesheet" href="css/videos.css">
+
+</head>
+<body>
+<header class="header">
+   
+   <section class="flex">
+      <a href="home.html" class="logo">NEMO</a>
+      <form action="search.html" method="post" class="search-form">
+         <input type="text" name="search_box" required placeholder="search courses..." maxlength="100">
+         <button type="submit" class="fas fa-search"></button>
+      </form>
+
+      <div class="icons">
+         <div id="menu-btn" class="fas fa-bars"></div>
+         <div id="search-btn" class="fas fa-search"></div>
+         <div id="user-btn" class="fas fa-user"></div>
+         <div id="toggle-btn" class="fas fa-sun"></div>
+      </div>
+
+      <div class="profile">
+         <img src="images/profile.jpg" class="image" alt="">
+         <h3 class="name">Gavara Sateesh</h3>
+         <p class="role">student</p>
+         <a href="profile.html" class="btn">view profile</a>
+         <div class="flex-btn">
+            <a href="login.html" class="option-btn">login</a>
+            <a href="register.html" class="option-btn">register</a>
+         </div>
+      </div>
+
+   </section>
+
+</header>   
+
+<div class="side-bar">
+
+   <div id="close-btn">
+      <i class="fas fa-times"></i>
+   </div>
+
+   <div class="profile">
+      <img src="images/profile.jpg" class="image" alt="">
+      <h3 class="name">Gavara Sateesh</h3>
+      <p class="role">student</p>
+      <a href="profile.html" class="btn">view profile</a>
+   </div>
+
+   <nav class="navbar">
+      <a href="home.html"><i class="fas fa-home"></i><span>home</span></a>
+      <a href="about.html"><i class="fas fa-question"></i><span>about</span></a>
+      <a href="courses.html"><i class="fas fa-graduation-cap"></i><span>courses</span></a>
+      <a href="teachers.html"><i class="fas fa-chalkboard-user"></i><span>teachers</span></a>
+      <a href="contact.html"><i class="fas fa-headset"></i><span>contact us</span></a>
+   </nav>
+
+</div>
+<section class="watch-video">
+   <div class="video-container">
+      <div class="video">
+         <video src="images/vid-1.mp4" controls poster="images/post-1-1.png" id="video"></video>
+      </div>
+      <h3 class="title">complete HTML tutorial (part 01)</h3>
+      <div class="info">
+         <p class="date"><i class="fas fa-calendar"></i><span>22-10-2022</span></p>
+         <p class="date"><i class="fas fa-heart"></i><span>44 likes</span></p>
+      </div>
+      <div class="tutor">
+         <img src="images/mam.jpg" alt="">
+         <div>
+            <h3>Kamalpreet Kaur Bagral</h3>
+            <span>developer</span>
+         </div>
+      </div>
+      <form action="" method="post" class="flex">
+         <a href="playlist.html" class="inline-btn">view playlist</a>
+         <button><i class="far fa-heart"></i><span>like</span></button>
+      </form>
+      <p class="description">
+         Learn how to build beautiful and responsive websites! This frontend development tutorial will guide you through the basics of HTML, CSS, and JavaScript.
+New to frontend development? No problem! This beginner-friendly tutorial will teach you everything you need to know to get started.
+Take your frontend skills to the next level! This advanced tutorial dives deep into [specific topic] to help you build even more powerful websites.
+      </p>
+   </div>
+
+</section>
+
+<section class="comments">
+   <h1 class="heading">4 comments</h1>
+   <form action="" class="add-comment">
+      <h3>add comments</h3>
+      <textarea name="comment_box" placeholder="enter your comment" required maxlength="1000" cols="30" rows="10"></textarea>
+      <input type="submit" value="add comment" class="inline-btn" name="add_comment">
+   </form>
+
+   <h1 class="heading">user comments</h1>
+   <div class="box-container">
+      <div class="box">
+         <div class="user">
+            <img src="images/profile.jpg" alt="">
+            <div>
+               <h3>Gavara Sateesh</h3>
+               <span>STUDENT</span>
+            </div>
+         </div>
+         
+         <div class="comment-box">This lectures made my new life...</div>
+         <form action="" class="flex-btn">
+            <input type="submit" value="edit comment" name="edit_comment" class="inline-option-btn">
+            <input type="submit" value="delete comment" name="delete_comment" class="inline-delete-btn">
+         </form>
+      </div>
+
+
+      <div class="box">
+         <div class="user">
+            <img src="images/pic-3.jpg" alt="">
+            <div>
+               <h3>Nani</h3>
+               <span>04-01-2025</span>
+            </div>
+         </div>
+         <div class="comment-box">amazing way of teaching!
+            thank you so much!
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="user">
+            <img src="images/pic-2.jpg" alt="">
+            <div>
+               <h3>Navya</h3>
+               <span>22-10-2024</span>
+            </div>
+         </div>
+         <div class="comment-box">loved it, thanks for the tutorial!</div>
+      </div>
+
+      <div class="box">
+         <div class="user">
+            <img src="images/pic-5.jpg" alt="">
+            <div>
+               <h3>leela</h3>
+               <span>22-10-2024</span>
+            </div>
+         </div>
+         <div class="comment-box">this is what I have been looking for! thank you so much!</div>
+      </div>
+
+      <div class="box">
+         <div class="user">
+            <img src="images/pic-2.jpg" alt="">
+            <div>
+               <h3>neha</h3>
+               <span>22-10-2024</span>
+            </div>
+         </div>
+         <div class="comment-box">thanks for the tutorial!
+
+            how to download source code file?
+         </div>
+      </div>
+
+   </div>
+
+</section>
+
+
+
+<footer class="footer">
+
+   &copy; copyright @ 2024 by <span>Gavara Sateesh</span> | all rights reserved!
+
+</footer>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+<script src="js/script_dark.js"></script>
+<script src="disable.js"></script>
+<script src="enable.js"></script>
+<script src="menu.js"></script>
+<script src="serch.js"></script>
+   
+</body>
+</html>

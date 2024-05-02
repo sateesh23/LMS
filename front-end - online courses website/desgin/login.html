@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>login</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+   <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/about.css">
+   <link rel="stylesheet" href="css/courses.css">
+   <link rel="stylesheet" href="css/form.css">
+   <link rel="stylesheet" href="css/header.css">
+   <link rel="stylesheet" href="css/homegrid.css">
+   <link rel="stylesheet" href="css/playlist.css">
+   <link rel="stylesheet" href="css/review.css">
+   <link rel="stylesheet" href="css/sidebar.css">
+   <link rel="stylesheet" href="css/teachers.css">
+   <link rel="stylesheet" href="css/videos.css">
+
+</head>
+<body>
+
+<header class="header">
+   
+   <section class="flex">
+
+      <a href="home.html" class="logo">NEMO</a>
+
+      <form action="search.html" method="post" class="search-form">
+         <input type="text" name="search_box" required placeholder="search courses..." maxlength="100">
+         <button type="submit" class="fas fa-search"></button>
+      </form>
+
+      <div class="icons">
+         <div id="menu-btn" class="fas fa-bars"></div>
+         <div id="search-btn" class="fas fa-search"></div>
+         <div id="user-btn" class="fas fa-user"></div>
+         <div id="toggle-btn" class="fas fa-sun"></div>
+      </div>
+
+      <div class="profile">
+         <img src="images/profile.jpg" class="image" alt="">
+         <h3 class="name">Sateesh Gavara</h3>
+         <p class="role">student</p>
+         <a href="profile.html" class="btn">view profile</a>
+         <div class="flex-btn">
+            <a href="login.html" class="option-btn">login</a>
+            <a href="register.html" class="option-btn">register</a>
+         </div>
+      </div>
+
+   </section>
+
+</header>   
+
+<div class="side-bar">
+
+   <div id="close-btn">
+      <i class="fas fa-times"></i>
+   </div>
+
+   <div class="profile">
+      <img src="images/profile.jpg" class="image" alt="">
+      <h3 class="name">Sateesh Gavara</h3>
+      <p class="role">student</p>
+      <a href="profile.html" class="btn">view profile</a>
+   </div>
+
+   <nav class="navbar">
+      <a href="home.html"><i class="fas fa-home"></i><span>home</span></a>
+      <a href="about.html"><i class="fas fa-question"></i><span>about</span></a>
+      <a href="courses.html"><i class="fas fa-graduation-cap"></i><span>courses</span></a>
+      <a href="teachers.html"><i class="fas fa-chalkboard-user"></i><span>teachers</span></a>
+      <a href="contact.html"><i class="fas fa-headset"></i><span>contact us</span></a>
+   </nav>
+
+</div>
+
+<section class="form-container">
+
+   <form action="" method="post" enctype="multipart/form-data">
+      <h3>login now</h3>
+      <p>your email <span>*</span></p>
+      <input type="email" name="email" placeholder="enter your email" required maxlength="50" class="box">
+      <p>your password <span>*</span></p>
+      <input type="password" name="pass" placeholder="enter your password" required maxlength="20" class="box">
+      <a href="home.html" class="inline-btn">Login</a>
+   </form>
+
+</section>
+
+
+
+<footer class="footer">
+
+   &copy; copyright @ 2024 by <span>Gavara Sateesh</span> | all rights reserved!
+
+</footer>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+<script src="js/script_dark.js"></script>
+<script src="disable.js"></script>
+<script src="enable.js"></script>
+<script src="menu.js"></script>
+<script src="serch.js"></script>
+<script src="login.js"></script>
+
+   
+</body>
+</html>
